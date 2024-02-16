@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASS_GEN</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="title"><h1>Gerador de Senha</h1></div>
+            
+            <div class="lenght">
+                <input id="number" type="number" class="lenght__number" max="20">
+                <label for="number" class="lenght__label">Comprimento da senha (máx. 20 caracteres)</label>
+            </div>   
+   
+            <ul class="checkboxes">              
+                <li><input id="chkLowerId" type="checkbox"  class="checkboxes__item" /><label for="chkLowerId" class="checkboxes__label">Letras minúsculas</label>
+                </li>
+                <li><input id="chkUpperId" type="checkbox"  class="checkboxes__item" /><label for="chkUpperId" class="checkboxes__label">Letras maiúsculas</label>
+                </li>
+                <li><input id="chkNumberId" type="checkbox" class="checkboxes__item" /><label for="chkNumberId" class="checkboxes__label">Números</label>
+                </li>
+                <li><input id="chkSymbolsId" type="checkbox" class="checkboxes__item"/><label for="chkSymbolsId" class="checkboxes__label">Símbolos</label>
+                </li>
+            </ul>
+                
+            <button id="btnGerar">Gerar Senha</button>
+
+            <section class="display">
+                <div id="senhaGeradaDisplay" class="display__senha"></div> 
+                
+                <div>
+                    <img src="./assets/icons-copy.png" class="display__btnCopiar">
+                </div>
+            </section>
+        </main>
+    </div>    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
